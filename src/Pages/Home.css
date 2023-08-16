@@ -1,0 +1,21 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.click{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.click:hover{
+    color: red;
+}
