@@ -7,8 +7,9 @@ import {
 } from '@ant-design/icons';
 import { Layout, Menu, Button, theme } from 'antd';
 import BMICalculator from '../Components/BMI-Calculator';
-import VideoPlayer from '../Components/VideoPlayer';
+import VideoPlayer from '../Components/VideoPlayer/VideoPlayer';
 import Gallery from '../Components/Gallery';
+import LandingPages from '../Components/LandingPages/LandingPage/LandingPages';
 
 const { Header, Sider, Content } = Layout;
 
@@ -27,6 +28,10 @@ const DashBoard = () => {
                     defaultSelectedKeys={['1']}
                     items={[
                         {
+                            key: '0',
+                            label: 'DashBoard',
+                        },
+                        {
                             key: '1',
                             icon: <Link to='/dashboard/Gallery'><UserOutlined /></Link>,
                             label: 'Gallery',
@@ -40,6 +45,11 @@ const DashBoard = () => {
                             key: '3',
                             icon: <Link to='/dashboard/VideoPlayer'><UserOutlined /></Link>,
                             label: 'Video Player',
+                        },
+                        {
+                            key: '4',
+                            icon: <Link to='/dashboard/LandingPages'><UserOutlined /></Link>,
+                            label: 'Landing Pages',
                         },
                     ]}
                 />
@@ -72,9 +82,10 @@ const DashBoard = () => {
                 >
                     {/* <BMICalculator/> */}
                     <Routes>
-                        <Route path='/BMI' element={< BMICalculator/>}/>
-                        <Route path='/Gallery' element={< Gallery/>}/>
-                        <Route path='/VideoPlayer' element={< VideoPlayer/>}/>
+                        <Route path='/BMI' element={< BMICalculator />} />
+                        <Route path='/Gallery' element={< Gallery />} />
+                        <Route path='/VideoPlayer' element={< VideoPlayer />} />
+                        <Route path='/LandingPages' element={< LandingPages />} />
                     </Routes>
 
                 </Content>
