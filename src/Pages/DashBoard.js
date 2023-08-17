@@ -9,7 +9,6 @@ import { Layout, Menu, Button, theme } from 'antd';
 import BMICalculator from '../Components/BMI-Calculator';
 import VideoPlayer from '../Components/VideoPlayer/VideoPlayer';
 import Gallery from '../Components/Gallery';
-import LandingPages from '../Components/LandingPages/LandingPage/LandingPages';
 
 const { Header, Sider, Content } = Layout;
 
@@ -85,7 +84,6 @@ const DashBoard = () => {
                         <Route path='/BMI' element={< BMICalculator />} />
                         <Route path='/Gallery' element={< Gallery />} />
                         <Route path='/VideoPlayer' element={< VideoPlayer />} />
-                        <Route path='/LandingPages' element={< LandingPages />} />
                     </Routes>
 
                 </Content>

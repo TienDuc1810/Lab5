@@ -1,0 +1,40 @@
+.main{
+    width: 1300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    background-color: white;
+    color:black;
+}
+.main-text-1{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.main-text-2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top:-20px;
+    margin-bottom: 40px;
+}
+.main-item{
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+}
+.position-item{
+    text-align: left;
+    width: 240px;
+}
+.main-text-3{
+    font-weight: 700;
+    color: black;
+}
+.main-text-4{
+    font-size: smaller;
+    color: black;
+}
