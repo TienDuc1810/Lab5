@@ -1,21 +1,14 @@
-.container{
-    height: 100vh;
-    width: 100%;
+.home{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background-color: #00000001;
 }
-.title{
-    font-size: 32px;
-    margin-bottom: 20px;
+.home-text{
+    font-size: 30px;
+    margin-left: 20px;
 }
-.click{
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.click:hover{
-    color: red;
-}
+
