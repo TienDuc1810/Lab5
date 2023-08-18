@@ -8,6 +8,7 @@ import {
 import { Layout, Menu, Button, theme } from 'antd';
 import BMICalculator from '../Components/BMI-Calculator';
 import VideoPlayer from '../Components/VideoPlayer/VideoPlayer';
+import CalculatorCD from '../Components/Countdown/CalculatorCD';
 import Gallery from '../Components/Gallery';
 
 const { Header, Sider, Content } = Layout;
@@ -50,6 +51,11 @@ const DashBoard = () => {
                             icon: <Link to='/dashboard/LandingPages'><UserOutlined /></Link>,
                             label: 'Landing Pages',
                         },
+                        {
+                            key: '5',
+                            icon: <Link to='/dashboard/Countdown'><UserOutlined /></Link>,
+                            label: 'Count Down',
+                        },
                     ]}
                 />
             </Sider>
@@ -84,6 +90,7 @@ const DashBoard = () => {
                         <Route path='/BMI' element={< BMICalculator />} />
                         <Route path='/Gallery' element={< Gallery />} />
                         <Route path='/VideoPlayer' element={< VideoPlayer />} />
+                        <Route path='/Countdown' element={< CalculatorCD />} />
                     </Routes>
 
                 </Content>

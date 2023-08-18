@@ -7,6 +7,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import LandingPages from './Components/LandingPages/LandingPage/LandingPages';
+import 'bootstrap/dist/css/bootstrap.min.css';
 library.add(fab, far, fas);
 
 function App() {
